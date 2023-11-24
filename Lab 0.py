@@ -1,3 +1,4 @@
+#Laboratorium 0
 import random
 
 #Zad1
