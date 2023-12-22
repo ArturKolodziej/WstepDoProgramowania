@@ -41,6 +41,22 @@ for i in range(len(lista)):
     K+=lista[i].count("K")
 print(lista.count("K"))
 
+#c
+KT=0
+for i in range(len(lista)):
+    K+=lista[i].count("KT")
+print(lista.count("KT"))
+
+#d
+s=int(input("Podaj długośc ciągu s: "))
+ilosc=0
+
+for i in krotka:
+    if len(i)>s:
+        ilosc=ilosc+1
+print(f"Ilosc ciągów znaków dłuższych od s: {ilosc}")
+
+
 #Zad 2
 
 zakupy = {"Masło": 3.50, "Chleb": 4.50, "Mleko": 3, "Ser": 12, "Ketchup": 8}
@@ -50,6 +66,28 @@ for artykul, kwota in zakupy.items():
 
 wydatki=sum(zakupy.values())
 print(f"Zakupy wynoszą: {wydatki}zł")
+
+#Zad 3
+rachunki= {"styczeń": 130, "luty": 180, "marzec": 250, "kwiecień": 300, "maj": 250, "czerwiec": 200,
+"lipiec": 140, "sierpień": 100, "wrzesień": 190, "październik": 400, "listopad": 210, "grudzień": 210}
+
+#a
+wartosci = list(rachunki.values())
+
+maksimum=max(wartosci)
+minimum=min(wartosci)
+srednia= sum(wartosci)/len(wartosci)
+
+print(f"Maksymalna wartośc rachunku: {maksimum}zł, minimalna wartośc rachunku: {minimum}zł, średnia wartość rachunku: {srednia}zł")
+
+#b
+miesiac = list(rachunki.keys())[-1]
+rachunek = rachunki[miesiac]
+
+if rachunek <= srednia:
+    print("Jesteś bezpieczny")
+else:
+    print("Zacznij oszczędzać")
 
 #Zad 4
 
@@ -107,9 +145,9 @@ symetryczna = X ^ Y
 print(f"Różnica symetryczna wynosi: {symetryczna}")
 
 #k
-maxX=max(X)
-maxY=max(Y)
-print(f"Maksymalna wartość zbioru X: {maxX}, maksymalna wartość zbioru Y: {maxY}")
+maksimumx = max(X)
+maksimumy = max(Y)
+print(f"Maksymalna wartość zbioru X: {maksimumx}, maksymalna wartość zbioru Y: {maksimumy}")
 
 #l
 elementx=X.pop()
