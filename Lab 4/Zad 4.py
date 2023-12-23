@@ -2,6 +2,6 @@ def czydod(x):
     if x>0:
         print("Liczba jest dodatnia")
     else:
-        print("Liczba jest ujemna")
+        print("Liczba jest ujemna lub równa zero")
 
-czydod(0)
+czydod(12)
